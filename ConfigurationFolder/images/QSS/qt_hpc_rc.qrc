@@ -1,0 +1,66 @@
+<RCC>
+    <qresource prefix="/">
+        <file>TitleQss/close.png</file>
+        <file>TitleQss/max.png</file>
+        <file>TitleQss/min.png</file>
+        <file>TitleQss/restore.png</file>
+        <file>TitleQss.css</file>
+        <file>WidgetQss.css</file>
+        <file>WidgetQss/add_bottom.png</file>
+        <file>WidgetQss/add_left.png</file>
+        <file>WidgetQss/add_right.png</file>
+        <file>WidgetQss/add_top.png</file>
+        <file>WidgetQss/branch_close.png</file>
+        <file>WidgetQss/branch_open.png</file>
+        <file>WidgetQss/calendar_nextmonth.png</file>
+        <file>WidgetQss/calendar_prevmonth.png</file>
+        <file>WidgetQss/checkbox_checked - 副本.png</file>
+        <file>WidgetQss/checkbox_checked.png</file>
+        <file>WidgetQss/checkbox_checked_disable - 副本.png</file>
+        <file>WidgetQss/checkbox_checked_disable.png</file>
+        <file>WidgetQss/checkbox_parcial.png</file>
+        <file>WidgetQss/checkbox_parcial_disable.png</file>
+        <file>WidgetQss/checkbox_unchecked.png</file>
+        <file>WidgetQss/checkbox_unchecked_disable.png</file>
+        <file>WidgetQss/down_arrow.png</file>
+        <file>WidgetQss/down_arrow_disabled.png</file>
+        <file>WidgetQss/down_arrow_hover.png</file>
+        <file>WidgetQss/downarrow.png</file>
+        <file>WidgetQss/left_arrow.png</file>
+        <file>WidgetQss/left_arrow_hover.png</file>
+        <file>WidgetQss/QGroupE_check - 副本.png</file>
+        <file>WidgetQss/QGroupE_check.png</file>
+        <file>WidgetQss/QGroupE_check_old.png</file>
+        <file>WidgetQss/QGroupE_uncheck.png</file>
+        <file>WidgetQss/QGroupE_uncheck_old.png</file>
+        <file>WidgetQss/radiobutton_checked.png</file>
+        <file>WidgetQss/radiobutton_checked_disable.png</file>
+        <file>WidgetQss/radiobutton_unchecked.png</file>
+        <file>WidgetQss/radiobutton_unchecked_disable.png</file>
+        <file>WidgetQss/sizegrip.png</file>
+        <file>WidgetQss/sizegrip1.png</file>
+        <file>WidgetQss/up_arrow.png</file>
+        <file>WidgetQss/up_arrow_disabled.png</file>
+        <file>WidgetQss/up_arrow_hover.png</file>
+        <file>WidgetQss/right_arrow.png</file>
+        <file>WidgetQss/right_arrow_hover.png</file>
+        <file>../blue_atta.png</file>
+        <file>../blue_dele.png</file>
+        <file>../blue_edit.png</file>
+        <file>../blue_email.png</file>
+        <file>../blue_email02.png</file>
+        <file>../blue_help.png</file>
+        <file>../blue_info.png</file>
+        <file>../blue_left.png</file>
+        <file>../blue_main.png</file>
+        <file>../blue_no.png</file>
+        <file>../blue_open.png</file>
+        <file>../blue_pin.png</file>
+        <file>../blue_right.png</file>
+        <file>../blue_save.png</file>
+        <file>../blue_ser.png</file>
+        <file>../blue_set.png</file>
+        <file>../blue_set02.png</file>
+        <file>../blue_yes.png</file>
+    </qresource>
+</RCC>
