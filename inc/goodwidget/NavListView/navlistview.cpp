@@ -402,15 +402,16 @@ void NavModel::collapse(const QModelIndex &index)
 	}
 
 	node->collapse = !node->collapse;
-	refreshList();
+
 
 	if (!node->collapse) {
 		beginInsertRows(QModelIndex(), index.row() + 1, index.row() + node->children.size());
 		endInsertRows();
 	} else {
 		beginRemoveRows(QModelIndex(), index.row() + 1, index.row() + node->children.size());
-		endRemoveRows();
+        endRemoveRows();
 	}
+    refreshList();
 }
 
 NavListView::NavListView(QWidget *parent) : QListView(parent)
