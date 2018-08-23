@@ -107,6 +107,10 @@ public slots:
     void ClickedButton_101();
     void ClickedButton_102();
 
+    //thirft tab
+    void ClickedButton_ThirftClient_201();
+    void ClickedButton_ThirftServer_202();
+
 private:
     QMap<QtProperty*,QString> m_property_dic;
 

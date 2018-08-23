@@ -44,7 +44,11 @@ SOURCES += main.cpp\
     inc/goodwidget/NavListView/navlistview.cpp \
     inc/goodwidget/NavListView/navlistview.cpp \
     inc/goodwidget/drawprogressbar/drawprogressbar.cpp \
-    tab/json/cgeneratejson.cpp
+    tab/json/cgeneratejson.cpp \
+#    tab/thirft/Interface_constants.cpp \
+#    tab/thirft/Interface_types.cpp \
+#    tab/thirft/RPCMasterService.cpp \
+#    tab/thirft/cmanegeservice.cpp
     inc/gui/Text/myhighlighter.cpp
 
 HEADERS  += \
@@ -70,7 +74,13 @@ HEADERS  += \
     inc/goodwidget/NavListView/navlistview.h \
     inc/goodwidget/NavListView/navlistview.h \
     inc/goodwidget/drawprogressbar/drawprogressbar.h \
-    tab/json/cgeneratejson.h
+    tab/json/cgeneratejson.h \
+#    tab/thirft/Interface_constants.h \
+#    tab/thirft/Interface_types.h \
+#    tab/thirft/RPCMasterService.h \
+#    tab/thirft/cmanegeservice.h \
+#    tab/thirft/RPCMasterService_server.h \
+#    tab/thirft/winsock2i.h
     inc/gui/Text/typedef.h
 
 
@@ -87,3 +97,31 @@ DEPENDPATH += $$PWD/../lib/poco
 
 INCLUDEPATH += $$PWD/../lib/PropertBrowser
 DEPENDPATH += $$PWD/../lib/PropertBrowser
+
+
+#win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/for_thirft/boost/lib_x64 -lCppUnit
+#else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/for_thirft/boost/lib_x64 -lCppUnitd
+#else:unix: LIBS += -L$$PWD/../lib/for_thirft/boost/lib_x64 -lCppUnit
+
+#INCLUDEPATH += $$PWD/../lib/for_thirft/boost/lib_x64
+#DEPENDPATH += $$PWD/../lib/for_thirft/boost/lib_x64
+#INCLUDEPATH += $$PWD/../lib/for_thirft/boost/include
+
+#win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/for_thirft/libevent/lib_x64 -lCppUnit
+#else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/for_thirft/libevent/lib_x64 -lCppUnitd
+#else:unix: LIBS += -L$$PWD/../lib/for_thirft/libevent/lib_x64 -lCppUnit
+
+#INCLUDEPATH += $$PWD/../lib/for_thirft/libevent/lib_x64
+#DEPENDPATH += $$PWD/../lib/for_thirft/libevent/lib_x64
+#INCLUDEPATH += $$PWD/../lib/for_thirft/libevent/include
+
+
+#win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/for_thirft/thrift/lib_x64 -lCppUnit
+#else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/for_thirft/thrift/lib_x64 -lCppUnitd
+#else:unix: LIBS += -L$$PWD/../lib/for_thirft/thrift/lib_x64 -lCppUnit
+
+#INCLUDEPATH += $$PWD/../lib/for_thirft/thrift/lib_x64
+#DEPENDPATH += $$PWD/../lib/for_thirft/thrift/lib_x64
+#INCLUDEPATH += $$PWD/../lib/for_thirft/thrift/inc
+
+

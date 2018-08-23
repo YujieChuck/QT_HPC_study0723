@@ -19,7 +19,8 @@
 //tab Json
 #include "tab/json/cgeneratejson.h"
 
-
+//tab thirft
+//#include "tab/thirft/cmanegeservice.h"
 
 
 CCenterWidget::CCenterWidget(QString GuiFile, QString MainPath): GUI(GuiFile,MainPath)
@@ -100,6 +101,14 @@ void CCenterWidget::InitialConnection()
     }
 
 
+    //thirft tab
+    if(this->GuiPushButton[201]!=NULL){
+        QObject::connect(GuiPushButton[201], SIGNAL(clicked()),this,SLOT(ClickedButton_ThirftClient_201()));
+    }
+    if(this->GuiPushButton[202]!=NULL){
+        QObject::connect(GuiPushButton[202], SIGNAL(clicked()),this,SLOT(ClickedButton_ThirftServer_202()));
+    }
+
 }
 
 void CCenterWidget::UpdateUserDefinedPara(bool flag)
@@ -170,6 +179,10 @@ void CCenterWidget::ClickedButton_12()
 void CCenterWidget::ClickedButton_13()
 {
     ////////*********************object*********************////////
+    /// help detail _QDialog
+    ///http://docs.huihoo.com/qt/solutions/4/qtpropertybrowser/
+    ///
+    ///
     QDialog* _QDialog = new QDialog();
 
 
@@ -195,11 +208,11 @@ void CCenterWidget::ClickedButton_13()
     item->setAttribute("minimum",1.0);
     item->setAttribute("maximum",5.0);
     item->setAttribute("singleStep",0.5);
-    item->setWhatsThis("Info");
+    //item->setWhatsThis("Info");
 //    item->setEnabled(false);    //For control whether it could be edited
 //    item->setModified(false);
 //    item->setStatusTip("Info");
-    //item->setToolTip("Info");   //For control the value tip
+    item->setToolTip("Info");   //For control the value tip
     m_TreeWidget->addProperty(item);
     m_property_dic[item] =QStringLiteral("Float Data:");
     QtVariantProperty* item02 =m_pVarManager->addProperty(QVariant::Double, QStringLiteral("Float Data02:"));
@@ -308,6 +321,18 @@ void CCenterWidget::ClickedButton_102()
 
     qDebug() << QString::fromStdString(strTemp);
     ShowMessage(strTemp);
+}
+
+void CCenterWidget::ClickedButton_ThirftClient_201()
+{
+
+}
+
+void CCenterWidget::ClickedButton_ThirftServer_202()
+{
+//    CManegeService _CManegeService;
+//    _CManegeService.startService();
+
 }
 
 
